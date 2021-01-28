@@ -33,7 +33,6 @@ var userSchema = new mongoose.Schema({
     password: String,
     profilePic: String,
     phone: String,
-    // gender: String,
     createdOn: {
         type: Date,
         'default': Date.now

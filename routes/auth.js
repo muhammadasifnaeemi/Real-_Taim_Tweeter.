@@ -17,7 +17,6 @@ api.post("/signup", (req, res, next) => {
         || !req.body.email
         || !req.body.password
         || !req.body.phone
-        || !req.body.gender
     ) {
 
         res.status(403).send(`
@@ -28,7 +27,7 @@ api.post("/signup", (req, res, next) => {
                 "email": "farooq@gmail.com",
                 "password": "12345",
                 "phone": "03332765421",
-                "gender": "male",
+                
                 
             }`)
         return;
@@ -44,7 +43,7 @@ api.post("/signup", (req, res, next) => {
                         "email": req.body.email,
                         "password": hash,
                         "phone": req.body.phone,
-                        "gender": req.body.gender,
+                    
                     })
                     newUser.save((err, data) => {
                         if (!err) {

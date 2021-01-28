@@ -18,7 +18,7 @@ function signup() {
             email: document.getElementById("email").value,
             password: document.getElementById("password").value,
             phone: document.getElementById("phone").value,
-            // gender: document.getElementById("gender").value
+    
             
             
         },withCredentials: true
