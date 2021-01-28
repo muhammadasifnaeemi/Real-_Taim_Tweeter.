@@ -1,5 +1,5 @@
 ///SignUP
-var url = "https://asiftwitter.herokuapp.com/";
+var url = "https://asiftwitter.herokuapp.com";
 
 // const url = "http://localhost:5000"
 
