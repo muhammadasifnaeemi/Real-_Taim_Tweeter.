@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signUp</title>
+    <link rel="shortcut icon" href="#" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="js/socket.io.js"></script>
+</head>
+
+<body>
+
+
+        <div  class="padding container d-flex justify-content-center">
+            <div style="max-width: 500px; margin: 0px auto;" class="col-md-10 col-md-offset-1" >
+                
+                <form  class="signup-form" onsubmit="return signup()">
+                    <h2 class="text-center">Sign Up From</h2>
+                    <div  class="form-group"> 
+                        <input type="text" id="name" class="form-control" placeholder="Full Name" required="required"> 
+                    </div>
+
+                    <div class="form-group"> 
+                        <input type="email" id="email" class="form-control" placeholder="Email Address" required="required">
+                     </div>
+
+                     <div class="form-group"> 
+                        <input type="number" id="phone" class="form-control" placeholder="Phone Number" required="required"> 
+                    </div>
+
+                    <div class="form-group"> 
+                        <input type="password" id="password" class="form-control" placeholder="Password" required="required"> 
+                    </div>
+                    
+                    <!-- <div class="form-group">
+                        <label >Gender :</label>
+                        <select name="Gender" id="gender" required="required">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div> -->
+
+                    <div class="form-group text-center"> 
+                        <button type="submit" class="btn btn-blue btn-block">Sign Up</button> 
+                    </div>
+                    <br>
+                    <div style="text-align: center;" class="form-group text-center"> 
+                    <a style="text-decoration: none; font-size: larger; font-weight: bold;" href="./forget1.html">Forgot Password?</a>
+                         
+                    </div>
+                    <hr>
+                    
+                    <div style="text-align: center;" class="form-group text-center"> 
+                        <a style="text-decoration: none;" href="./login.html">Already have Account</button> </a> 
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
